@@ -1,0 +1,50 @@
+//###########################################################################################################
+
+//  ### array.find() ###
+
+//  1. Wat zijn de paramters van de callback function? a = element, b = index, c = original array.
+//  2. Wat doet de callback function hier? De callback function zet de waarde van de eerste parameter af tegen
+//  elk element in de array
+//  3. Wat returned de callback? De callback returned true of false
+//  De array.find(function(element, index, original-array)) method returned de waarde van 
+//  de eerste value in de meegeleverde array die de Callback functie truthy maakt
+//  functie. De callback functie wordt tussen {} meegeleverd
+//  De Callback functie neemt 3 parameters aan:
+
+// input array contain some elements. 
+var array = [10, 20, 30, 40, 50]; 
+//
+// Here find function returns the value of the first element 
+// in the array that satisfies the provided testing 
+// function (return element > 10). 
+var found = array.find(function(element) { 
+  return element > 20; 
+}); 
+  
+// Printing desired values. 
+console.log(found); 
+
+
+//###########################################################################################################
+
+//  ### array.filter() ###
+
+//  De array.filter() method creeert een nieuwe array met alle items uit de gegeven array die voldoen
+//  aan de eisen van de callback function
+//  1. Wat zijn de paramters van de callback function? a = element, b = index, c = original-array
+//  2. Wat doet de callback function hier? De callback function is een predikaat waartegen elk element wordt
+//  getest. 
+//  3. Wat returned de callback? TRUE of FALSE. Bij TRUE beland het element in de nieuwe array, bij FALSE niet.
+
+//###########################################################################################################
+
+//  ### array.map() ###
+
+// 
+//  1. Wat zijn de paramters van de callback function? a = element, b = index, c = original-array
+//  2. Wat doet de callback function hier? De callback function is een predikaat waartegen elk element wordt
+//  getest. Bij TRUE beland het element in de nieuwe array, bij FALSE niet.
+//  3. Wat returned de callback? De callback functie van array.map returned per element een nieuw element voor in de nieuwe array.
+
+
+
